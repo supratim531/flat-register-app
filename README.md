@@ -1,4 +1,4 @@
-# flat-register-app
+# flat-register-app ([Spring-Boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/) & [Angular](https://angular.io/docs))
 
 ### [Frontend](https://registerflat.netlify.app/ "see the UI deployment in netlify") and [Backend](https://registerflat.herokuapp.com/ "see the server deployment in heroku") of `Flat Register` Web Application
 This is a simple application on flat registration based upon basic CRUD functionality #SpringAngular
@@ -23,7 +23,7 @@ mvn spring-boot:run
 ```bash
 cd supratim-flat-register-app\flat-register-frontend
 ```
-- Run the ng application (After run this command the default browser will open to serve the [angular app](http://localhost:4200))
+- Run the ng application (After run this command the default browser will open to serve the [angular app](http://localhost:4200 "http://localhost:4200"))
 - `This command may takes some time`
 ```bash
 npm install && ng s --o
