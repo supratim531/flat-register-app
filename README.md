@@ -3,8 +3,9 @@
 ### [Frontend](https://registerflat.netlify.app/ "see the UI deployment in netlify") and [Backend](https://registerflat.herokuapp.com/ "see the server deployment in heroku") of `Flat Register` Web Application
 This is a simple application on flat registration based upon basic CRUD functionality #SpringAngular
 
-- [`Heroku`](https://git.heroku.com/registerflat.git "You can git-clone the source code of backend from this link") github link for backend
 - [`Angular`](https://github.com/supratim531/flat-register-netlify.git "You can git-clone the source code of frontend from this link") github link for UI
+- [`Heroku`](https://git.heroku.com/registerflat.git "You can git-clone the source code of backend from this link") github link for backend
+
 ## Test App in Local Server
 
 ### `Import` the git repository
@@ -32,7 +33,6 @@ cd supratim-flat-register-app\flat-register-frontend
 ```bash
 npm install && ng s --o
 ```
-
 ***
 >Keep smiling and work harder...
 ***
