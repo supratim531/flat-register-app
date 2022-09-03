@@ -17,3 +17,13 @@ cd supratim-flat-register-app\flat-register-backend
 ```bash
 mvn spring-boot:run
 ```
+
+### Run the `Angular` App from your `windows-terminal`
+- Switch the directory from different terminal
+```bash
+cd supratim-flat-register-app\flat-register-frontend
+```
+- Run the ng application
+```bash
+npm install && ng s --o
+```
