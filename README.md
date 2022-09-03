@@ -4,6 +4,8 @@
 This is a simple application on flat registration based upon basic CRUD functionality #SpringAngular
 
 ## Test App in Local Server
+
+### `Import` the git repository
 ```terminal
 git clone https://github.com/supratim531/flat-register-app.git supratim-flat-register-app
 ```
@@ -13,7 +15,7 @@ git clone https://github.com/supratim531/flat-register-app.git supratim-flat-reg
 ```bash
 cd supratim-flat-register-app\flat-register-backend
 ```
-- Run the spring application (After run this command the local backend server will serve by JVM)
+- Run the spring application (After run this command the backend server will locally serve by JVM)
 ```bash
 mvn spring-boot:run
 ```
