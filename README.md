@@ -8,7 +8,7 @@ This is a simple application on flat registration based upon basic CRUD function
 git clone https://github.com/supratim531/flat-register-app.git supratim-flat-register-app
 ```
 
-### Run the `Spring-Boot` App from your `Windows` terminal
+### Run the `Spring-Boot` App from your `windows-terminal`
 - Switch the directory
 ```bash
 cd supratim-flat-register-app\flat-register-backend
