@@ -11,7 +11,7 @@ git clone https://github.com/supratim531/flat-register-app.git supratim-flat-reg
 ### Run the `Spring-Boot` App from your terminal
 - Switch the directory
 ```bash
-cd flat-register-backend
+cd supratim-flat-register-app\flat-register-backend
 ```
 - Run the spring application
 ```bash
