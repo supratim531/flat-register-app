@@ -23,7 +23,8 @@ mvn spring-boot:run
 ```bash
 cd supratim-flat-register-app\flat-register-frontend
 ```
-- Run the ng application `It may takes some time` (After run this command the default browser will open to serve the [angular app](http://localhost:4200))
+- Run the ng application (After run this command the default browser will open to serve the [angular app](http://localhost:4200))
+- `This command may takes some time`
 ```bash
 npm install && ng s --o
 ```
