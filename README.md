@@ -4,7 +4,7 @@
 This is a simple application on flat registration based upon basic CRUD functionality #SpringAngular
 
 - [`Angular`](https://github.com/supratim531/flat-register-netlify.git "You can git-clone the source code of frontend from this link") github link for UI
-- [`Heroku`](https://git.heroku.com/registerflat.git "You can git-clone the source code of backend from this link") github link for backend
+- [`Spring-Boot`](https://git.heroku.com/registerflat.git "You can git-clone the source code of backend from this link") github link for backend
 
 ## Test App in Local Server
 
