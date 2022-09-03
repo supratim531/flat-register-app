@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="container col-md-6 my-5">
+    <h1 style="color:rgb(105, 214, 224)" align="center">Welcome Back</h1><br>
+    <div *ngIf="showMessage" class="alert alert-danger alert-dismissible fade show" role="alert">
+      <strong>Username & Password both cannot be empty</strong>
+      <button (click)="closeMessage()" type="button" class="btn-close" data-bs-dismiss="alert"
+        aria-label="Close"></button>
+    </div>
+    <div *ngIf="showSuccessMessage" class="alert alert-success alert-dismissible fade show" role="alert">
+      <strong>Login Successful</strong>
+      <button (click)="closeSuccessMessage()" type="button" class="btn-close" data-bs-dismiss="alert"
+        aria-label="Close"></button>
+    </div>
+    <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show" role="alert">
+      <strong>{{errorMessage}}</strong>
+      <button (click)="closeErrorMessage()" type="button" class="btn-close" data-bs-dismiss="alert"
+        aria-label="Close"></button>
+    </div>
+    <div class="mb-3" style="font-family: fira code; opacity: 60%;">
+      New Here? <a routerLink="/register" class="text-primary fw-bold text-decoration-none">Create an Account</a>
+    </div>
+    <form [formGroup]="loginform" (ngSubmit)="userLogin()">
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" formControlName="username"
+        onkeypress="return event.charCode !== 32" placeholder="Username">
+        <div class="form-text" *ngIf="username.errors?.['required'] && (username.dirty || username.touched)" style="color: red;">
+					Username cannot be empty
+				</div>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" formControlName="password" placeholder="Password">
+        <div class="form-text" *ngIf="password.errors?.['required'] && (password.dirty || password.touched)" style="color: red;">
+					Password cannot be empty
+				</div>
+      </div>
+      <button type="submit" [disabled]="loginform.invalid" class="btn btn-primary">Login</button>
+      <button class="btn btn-secondary float-end" routerLink="/home">home</button>
+    </form>
+  </div>
+</div>
