@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 const DOMAIN = 'http://localhost:8888'
-//const DOMAIN = 'https://flatregister.herokuapp.com'
+//const DOMAIN = 'https://registerflat.herokuapp.com'
 
 @Injectable({
   providedIn: 'root'

@@ -1,3 +1,11 @@
+<div *ngIf="successMessage" class="alert alert-success alert-dismissible fade show mb-0" role="alert">
+  <strong>{{successMessage}}</strong>
+  <button type="button" (click)="closeSuccessMessage()" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show mb-0" role="alert">
+  <strong>{{errorMessage}}</strong>
+  <button type="button" (click)="closeErrorMessage()" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -42,7 +50,7 @@
 <ng-template #thenBlock>
   <h1 class="text-center my-5 text-danger" style="opacity: 45%;">:"( Server Error 500)</h1>
   <h1 class="text-center text-warning" style="opacity: 45%;">Probably server is offline (Reload once)</h1>
-  <h3 class="text-center my-5" style="opacity: 45%;">N.B. : Feel free to contact with owner or check <a href="https://flatregister.herokuapp.com/" style="text-decoration: none;" target="_blank">heroku-hosted-backend-server</a></h3>
+  <h3 class="text-center my-5" style="opacity: 45%;">N.B. : Feel free to contact with owner or check <a href="https://registerflat.herokuapp.com/" style="text-decoration: none;" target="_blank">heroku-hosted-backend-server</a></h3>
 </ng-template>
 
 <ng-template #elseBlock>
