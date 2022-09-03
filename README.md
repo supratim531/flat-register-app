@@ -11,7 +11,7 @@ git clone https://github.com/supratim531/flat-register-app.git supratim-flat-reg
 ```
 
 ### Run the `Spring-Boot` App from your windows `cmd`
-- Switch the directory
+- Switch to the `backend` directory
 ```bash
 cd supratim-flat-register-app\flat-register-backend
 ```
@@ -21,7 +21,7 @@ mvn spring-boot:run
 ```
 
 ### Run the `Angular` App from your windows `cmd`
-- Switch the directory from different terminal
+- Switch to the `frontend` directory from different terminal
 ```bash
 cd supratim-flat-register-app\flat-register-frontend
 ```
