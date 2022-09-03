@@ -13,7 +13,7 @@ git clone https://github.com/supratim531/flat-register-app.git supratim-flat-reg
 ```bash
 cd supratim-flat-register-app\flat-register-backend
 ```
-- Run the spring application
+- Run the spring application (After run this command the local backend server will serve by JVM)
 ```bash
 mvn spring-boot:run
 ```
@@ -23,7 +23,7 @@ mvn spring-boot:run
 ```bash
 cd supratim-flat-register-app\flat-register-frontend
 ```
-- Run the ng application (After run this command the default browser will open to serve the [angular app](http://localhost:4200 "http://localhost:4200"))
+- Run the ng application (After run this command the default browser will open to serve the [angular app](http://localhost:4200 "By default Angular CLI ng serve command uses port 4200 to run the application in localhost"))
 - `This command may takes some time`
 ```bash
 npm install && ng s --o
