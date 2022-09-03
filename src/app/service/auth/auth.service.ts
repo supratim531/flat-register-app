@@ -4,8 +4,8 @@ import { HttpClient } from '@angular/common/http';
 
 import { TokenService } from '../token/token.service';
 
-const DOMAIN = 'http://localhost:8888'
-//const DOMAIN = 'https://flatregister.herokuapp.com'
+//const DOMAIN = 'http://localhost:8888'
+const DOMAIN = 'https://registerflat.herokuapp.com'
 
 @Injectable({
   providedIn: 'root'
