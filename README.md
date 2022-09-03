@@ -30,3 +30,6 @@ cd supratim-flat-register-app\flat-register-frontend
 ```bash
 npm install && ng s --o
 ```
+
+>Keep smiling and work harder...
+***
