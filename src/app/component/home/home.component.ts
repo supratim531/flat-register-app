@@ -22,6 +22,8 @@ export class HomeComponent implements OnInit, DoCheck {
   isSuperuser: boolean = false;
   serverError: boolean = false;
   loadingServer: boolean = true;
+  errorMessage: string | null = null;
+  successMessage: string | null = null;
 
   constructor(
     private _router: Router,
@@ -38,6 +40,14 @@ export class HomeComponent implements OnInit, DoCheck {
 
   ngDoCheck(): void {
     this.verifyUser();
+  }
+
+  closeErrorMessage(): void {
+    this.errorMessage = null;
+  }
+
+  closeSuccessMessage(): void {
+    this.successMessage = null;
   }
 
   verifyUser(): void {
@@ -85,10 +95,22 @@ export class HomeComponent implements OnInit, DoCheck {
               response => {
                 console.log('response', response);
                 this.fetchAllFlats();
+                this.successMessage = `Congratulation ${owner.ownerName}, You have successfully registered flat number ${flatId}`;
                 document.getElementById('register-btn')?.click();
+                window.scroll(0, 0);
               },
               error => {
-                console.log('error', error);
+                console.log('rectifying-error', error);
+                this._ownerService.getOwnerByFlatId(flatId).subscribe(
+                  newOwner => {
+                    console.log('newOwner', newOwner);
+                    this.errorMessage = `Flat number ${flatId} is already registered by ${newOwner.ownerName}. Reload the page to reflect the updated information`;
+                    window.scroll(0, 0);
+                  },
+                  error => {
+                    console.log('error', error);
+                  }
+                );
               }
             );
           },
@@ -104,6 +126,9 @@ export class HomeComponent implements OnInit, DoCheck {
   }
 
   registerFlatOnClick(flatId: number): void {
+    this.errorMessage = null;
+    this.successMessage = null;
+
     if (this.isOwner) {
       const targetFlat = this.flats.find((element: any) => element.flatId === flatId)
       let msg = `Are you ready to pay ₹${targetFlat.price}0 for flat number ${targetFlat.flatId}? (Press OK to confirm)`;

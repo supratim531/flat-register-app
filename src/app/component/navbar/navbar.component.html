@@ -22,7 +22,7 @@
           <a class="nav-link" *ngIf="!isLoggedIn" aria-current="page" routerLink="/register" routerLinkActive="active">Register</a>
         </li>
         <li class="nav-item">
-          <a type="button" *ngIf="isLoggedIn" class="btn btn-danger mx-2" (click)="logoutOnClick()">Logout</a>
+          <a type="button" *ngIf="isLoggedIn" class="btn btn-danger" (click)="logoutOnClick()">Logout</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" style="color: rgb(15, 238, 71); font-family: fira code; opacity: 55%;" *ngIf="isLoggedIn"><b><i>Welcome {{user.username}} <span *ngIf="isSuperuser">({{'Admin'}})</span></i></b></a>
